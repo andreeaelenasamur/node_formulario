@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="formulario_contacto">
+            <form>
+                <h1>Formulario de Contacto</h1>
+                <div class="container">
+                    <div>
+                        <label for="nombreusuario">Nombre</label>
+                        <input type="text" name="nombreusuario" id="nombreusuario" placeholder="Tu nombre" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="apellidousuario">Apellidos</label>
+                        <input type="text" name="apellidousuario" id="apellidousuario" placeholder="Tus apellidos"
+                            required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Tu email" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="Tu número de teléfono"
+                            pattern="[0-9]{9}" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="msg">Mensaje</label>
+                        <textarea name="user_message" id="msg" placeholder="Tu mensaje" required></textarea>
+                    </div>
+                </div>
+                <br>
+                <button id="button">Enviar</button>
+      
+                <button type="reset">Resetear</button>
+            </form>   
+        </div>
+    </div>
+</body>
+</html>
